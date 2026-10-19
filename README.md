@@ -40,8 +40,8 @@ Credenciais de teste: usuario `app`, senha `app123`, banco `bench`.
 - Prepared statements: com `max_prepared_statements = 0`, erro `prepared statement "P_0" already exists`; com 200 (padrao na 1.26), funciona.
 - Benchmark: com conexoes persistentes o PgBouncer foi mais lento (~5x); com conexoes curtas (`-C`) foi ~4x mais rapido.
 
-## Limitacoes e ressalvas
-- Benchmark rodou num notebook, dentro do WSL2, com o pgbench no mesmo container do Postgres. Valores absolutos nao valem para producao; vale a comparacao entre cenarios.
+## Limitações e ressalvas
+- Benchmark rodou num notebook, i7, dentro do WSL2, com o pgbench no mesmo container do Postgres. Valores absolutos não valem para cenário de produção; vale a comparação entre cenários.
 - Cada numero vem de poucas execucoes. Com `-C` e muitas repeticoes, as portas do SO esgotam (`Cannot assign requested address`).
 - Direto com 90 clientes e `-C` fica no limite de 100 conexoes e pode falhar.
-- LISTEN e cursores WITH HOLD, e o pgpool-II, sao discutidos so nos slides.
+- LISTEN e cursores WITH HOLD, e o pgpool-II, são discutidos só nos slides.
