@@ -8,7 +8,7 @@ Demonstra o custo do modelo processo-por-conexao do PostgreSQL e como o PgBounce
 
 ## Requisitos
 - Docker com Docker Compose (testado em WSL2/Ubuntu, PostgreSQL 16, PgBouncer 1.26)
-- Para baixar o Docker, cole no terminal os comandos:
+- Para baixar o Docker, cole no terminal (*UBUNTU*) os comandos:
   curl -fsSL https://get.docker.com | sudo sh
   sudo usermod -aG docker $USER
 
