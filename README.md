@@ -19,7 +19,7 @@ docker compose up -d
 ./03_limitacoes.sh
 ./04_benchmark.sh   # opcional, leva alguns minutos
 ```
-Credenciais de teste: usuario `app`, senha `app123`, banco `bench`. Em producao, nunca versionar senhas.
+Credenciais de teste: usuario `app`, senha `app123`, banco `bench`.
 
 ## Arquivos
 | Arquivo | O que demonstra |
